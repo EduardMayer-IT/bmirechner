@@ -4,6 +4,7 @@ Array.from(document.getElementsByTagName('input')).forEach
     });
 function updateUI() {
     // Logik zur Aktualisierung des UI hier
+    document.getElementById('bmiValue').textContent = bmi; // Zeige BMI im UI
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
     const bmi = calculateBMI(weight, height);
