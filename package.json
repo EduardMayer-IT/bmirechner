@@ -4,6 +4,7 @@
   "description": "Ein einfacher BMI Rechner",
   "main": "server.js",
   "scripts": {
+    "cypress:open": "cypress open",
     "start": "nodemon server.js",
     "test": "npx jest",
     "start-prod": "npm start"
@@ -12,7 +13,7 @@
     "express": "^4.19.1"
   },
   "devDependencies": {
-    "cypress": "^13.7.1",
+    "cypress": "^13.6.1",
     "jest": "^27.2.0",
     "nodemon": "^3.0.1"
   },
