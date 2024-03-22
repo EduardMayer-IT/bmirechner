@@ -1,0 +1,28 @@
+name: BMI Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Cypress tests
+      run: npx cypress run
+
+    - name: Run Cypress tests in headless mode
+      run: npx cypress run --headless
