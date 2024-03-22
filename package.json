@@ -1,7 +1,7 @@
 {
   "name": "bmi-calculator",
   "version": "1.0.0",
-  "description": "Ein einfacher BMI Rechner",
+  "description": "BMI Rechner",
   "main": "server.js",
   "scripts": {
     "cypress:open": "cypress open",
